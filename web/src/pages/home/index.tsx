@@ -1,13 +1,16 @@
-import { Button, Input } from '@/components';
-import { useAuthRegister } from '@/hooks';
-import { Register } from '@/models';
-import { Schema } from '@/schemas';
+/* eslint-disable no-unused-vars */
 import { zodResolver } from '@hookform/resolvers/zod';
 import { AxiosError } from 'axios';
 import { Eye, EyeOff } from 'lucide-react';
-import { ReactElement, useState } from 'react';
+import type { ReactElement } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+
+import { Button, Input, Logo } from '@/components';
+import { useAuthRegister } from '@/hooks';
+import type { Register } from '@/models';
+import { Schema } from '@/schemas';
 type ViewPass = { [P in keyof Omit<Register, 'username' | 'email'>]: boolean };
 type ViewPassKey = keyof ViewPass;
 
@@ -58,6 +61,7 @@ export function Home(): ReactElement {
 				onSubmit={handleSubmit(handleRegister)}
 				className="w-full lg:w-2/4 flex flex-col gap-6"
 			>
+				<Logo />
 				<div className="flex flex-1 flex-col gap-2 w-full">
 					<div className="space-y-1 w-full">
 						<Input
