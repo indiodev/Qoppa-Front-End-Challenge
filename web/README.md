@@ -6,7 +6,11 @@ body da requisição.
 
 ### Preview
 
-![Hero Image](gitub/hero.png 'a title')
+<p align="center">
+  <img alt="Prewview" src=".github/preview.png" width="100%">
+</p>
+
+<!-- ![Hero Image](./.gitub/hero.png "Hero Image") -->
 
 ### Ponto de atenção
 
@@ -45,8 +49,9 @@ para permitir solicitações de origem da solução
 
 ### Como executar?
 
-> Necessário possuir o gerenciador de pacotes/dependências
-> <a href="https://pnpm.io/pt/" target="_blank">pnpm</a> em sua máquina
+> Necessário ter a api sendo executada e possuir o gerenciador de
+> pacotes/dependências <a href="https://pnpm.io/pt/" target="_blank">pnpm</a> em
+> sua máquina
 
 - Navegar até a pasta /web na raiz do projeto
 - Instale as dependências com `pnpm install`
